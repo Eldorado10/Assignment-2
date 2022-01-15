@@ -13,7 +13,7 @@ nav{
 .head,a{
     text-decoration:none;
     color: black;
-    padding: 20px;
+    padding: 10px;
     font-weight:bolder;
     
 }
@@ -34,6 +34,9 @@ body{
 
 h1{
     font-size: 70px;
+}
+h2{
+    font-size: 28px;
 }
 h3{
     font-size: 26px;
@@ -57,31 +60,36 @@ h5{
 }
 .influencer{
     width:auto;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    
+    
     margin-top: 150px;
    
 
 }
 .influence{
-    width: 600px;
+    width: 50%;
 }
 
 
 .main-camera{
-    width: 500px;
-    height: 300px;
-    margin-left: 20px;   
-
+    margin-right: 60px; 
     background: url(images/Circle\ design.svg);
     background-repeat:no-repeat;
 }   
+.main-camera:hover{
+    width: 400px;
+    height: 400px;
+    transform: scale(0.75) rotate(360deg);
+    transition: transform 3.5s ease-in-out;
 
+
+}
 .button-color{
     width: 250px;
     height: 80px;
     background:  #E02C6D;
-    transition:width 2s;
+    transition:width 1.5s;
     font-size: 17px;
     font-weight: 700;
     border-radius: 18px;
@@ -95,10 +103,10 @@ h5{
 #see-more{
     text-align:end;
     color:#E02C6D ;
-    margin-top: 50px;
-    margin-left: 0px;
-    margin-right: 50px;
-    font-weight: 30px;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 20px;
+   
 }
 
 /* 
@@ -172,17 +180,17 @@ margin-top: 80px;
 }
 .Special{
 
-    margin-left: 200px;
+    margin-left: 10px;
 }
 .bonus{
-    margin-top: 70px;
-    width: 400px;
+    margin-bottom: 20px;
+    width: 350px;
     height: 300px;
     transition: all .2s ease-in-out;
 }
 .bonus:hover{
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
     transform: scale(1.1);
 }
 
@@ -191,8 +199,9 @@ FOOTER
 -----------*/
 footer{
     display: block;
+    position: absolute;
     width: 100%;
-    height: 180px;
+    height: 250px;
     text-align: center;
     background-color: rgb(1, 1, 59);
     color: white;
@@ -200,48 +209,41 @@ footer{
 
 }
 .fab {
-    margin: 10px;
+   padding: 10px;
 
 }   
 /* Mobile devices */
-@media only screen and (max-width:688px) {
-    .main-container{
-        width:100%
-        
-    }
-    .head,.footer{
-       flex-wrap: nowrap;
 
-    }
-    .container{
-        grid-template-columns: repeat(1,1fr);
-        margin: 10px;
-
-    }
-    .footer{
-        width: 100%;
-        margin-left : 200px;
-    }
-}
-/* @media only screen and (device-width: 768px){} */
-@media only screen  and(min-width:700px) and (max-width:780px)
+@media only screen and (max-width: 688px) 
 {
-    .main-container{
-        width:100%
-        
+    
+    body {
+        width: 100%;
+        background-color: rgb(242, 243, 243);
+      
     }
-    .head{
-       flex-wrap: nowrap;
-
+    .influencer, .logos, .container, .dream{
+        grid-template-columns: repeat(1,1fr);
     }
-    .container{
-        grid-template-columns: repeat(2, 1fr);
-        display: flex;
-
-    }
-    .footer{
-        margin-left: 200px;
+    .influencer, .logos, .container, .dream{
+        flex-direction: column;
     }
     
     
+}
+/* TAblet ONly */
+@media only screen and (min-width:688px) and (max-width:992px)
+{
+    body 
+    {
+        width: 100%;
+        background-color: rgb(243, 239, 241);
+      
+    }
+    .influencer, .logos, .container, .dream{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .influencer, .logos, .container, .dream{
+        flex-direction: column;
+    }
 }
