@@ -220,6 +220,7 @@ footer{
     }
     .footer{
         width: 100%;
+        margin-left : 200px;
     }
 }
 /* @media only screen and (device-width: 768px){} */
@@ -229,7 +230,7 @@ footer{
         width:100%
         
     }
-    .head .footer{
+    .head{
        flex-wrap: nowrap;
 
     }
@@ -237,6 +238,9 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         display: flex;
 
+    }
+    .footer{
+        margin-left: 200px;
     }
     
     
