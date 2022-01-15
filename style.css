@@ -60,6 +60,7 @@ h5{
 
 .main-camera{
     width: 500px;
+    height: 300px;
     margin-left: 20px;   
     background: url(images/Circle\ design.svg);
     background-repeat:no-repeat;
